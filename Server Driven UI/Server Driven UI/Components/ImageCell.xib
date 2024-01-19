@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="94" id="iBt-Gj-47s" customClass="ImageCell" customModule="Server_Driven_UI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="94"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iBt-Gj-47s" id="gbD-VB-ygQ">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y8m-F7-ye1">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90" id="Kk8-SH-0bb"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="y8m-F7-ye1" firstAttribute="top" secondItem="gbD-VB-ygQ" secondAttribute="top" id="ggJ-Q5-Oc9"/>
+                    <constraint firstItem="y8m-F7-ye1" firstAttribute="leading" secondItem="gbD-VB-ygQ" secondAttribute="leading" id="jEM-TR-aU4"/>
+                    <constraint firstAttribute="trailing" secondItem="y8m-F7-ye1" secondAttribute="trailing" id="qbH-za-guL"/>
+                    <constraint firstAttribute="bottom" secondItem="y8m-F7-ye1" secondAttribute="bottom" id="wBF-Dt-91h"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="thisImageView" destination="y8m-F7-ye1" id="Xu9-fL-2wd"/>
+            </connections>
+            <point key="canvasLocation" x="47.692307692307693" y="-40.521327014218009"/>
+        </tableViewCell>
+    </objects>
+</document>
